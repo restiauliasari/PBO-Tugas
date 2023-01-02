@@ -14,6 +14,17 @@ public class Buku {
     private String judul;
     private String pengarang;
     private String penerbit;
+
+    public Buku() {
+        
+    }
+
+    public Buku(String kodebuku, String judul, String pengarang, String penerbit) {
+        this.kodebuku = kodebuku;
+        this.judul = judul;
+        this.pengarang = pengarang;
+        this.penerbit = penerbit;
+    }
     
     public String getKodeBuku() {
         return kodebuku;
