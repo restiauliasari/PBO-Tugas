@@ -40,7 +40,7 @@ public class PengembalianController {
     
     public void setCboNobp(){
         formPengembalian.getCboNobp().removeAllItems();
-        List <Anggota> list = anggotaDao.getAllAnggota();
+        List <Anggota> list = anggotaDao.getAll();
         for (Anggota anggota: list) {
             formPengembalian.getCboNobp().
                     addItem(anggota.getNobp()+"-"+anggota.getNama());
@@ -49,10 +49,10 @@ public class PengembalianController {
     
     public void setCboBuku(){
         formPengembalian.getCboBuku().removeAllItems();
-        List <Buku> list = bukuDao.getAllBuku();
+        List <Buku> list = bukuDao.getAll();
         for (Buku buku: list) {
             formPengembalian.getCboBuku().
-                    addItem(buku.getkodebuku());
+                    addItem(buku.getKodeBuku());
         }
     }
     
@@ -76,7 +76,7 @@ public class PengembalianController {
         int index = formPengembalian.getTblPengembalian().getSelectedRow();
         pengembalian = pengembalianDao.getPengembalian(index);
         if(pengembalian != null){
-            List<Anggota> listAnggota = anggotaDao.getAllAnggota();
+            List<Anggota> listAnggota = anggotaDao.getAll();
             for (Anggota anggota:listAnggota){
                 if(pengembalian.getNobp()==anggota.getNobp()){
                     formPengembalian.getCboNobp().setSelectedItem(anggota.getNobp()+"-"+anggota.getNama());
@@ -110,4 +110,5 @@ public class PengembalianController {
             };
             tabelModel.addRow(data);
         }
+    }
 }
