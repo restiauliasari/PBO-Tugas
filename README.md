@@ -7,3 +7,8 @@ Membuat Program Java dengan Netbeans(PBO_2101092018)
 2. Kita Akan dibawa ke halaman utama NetBeans
 ![Screenshot (212)](https://user-images.githubusercontent.com/114378007/211190778-9d4f1fac-f614-4100-a6de-994100dec6df.png)
 
+3. Membuat Project baru. Pertama yang harus kita lakukan adalah klik File --> New Project atau bisa menekan Ctrl+Shift+N
+![image](https://user-images.githubusercontent.com/114378007/211190861-37747f4b-6577-46ac-8a9d-dabf471a2eca.png)
+
+Maka kita akan dibawa ke halaman seperti dibawah. klik Next --> isikan nama project
+
